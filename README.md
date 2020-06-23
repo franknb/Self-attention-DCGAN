@@ -1,14 +1,14 @@
 # Self-attention-DCGAN
 
-Model Structure:
+#### Model Structure:
 
 ![model_structure](demo/model_structure.png)
 
-Deep Convolutional GAN VS Self Attention GAN
+#### Deep Convolutional GAN VS Self Attention GAN
 
 ![comparison on mnist](demo/comparison.gif)
 
-Referance:
+#### Referance:
 
 [1] Han Zhang, Ian Goodfellow, Dimitris Metaxas, Augustus Odena: “Self-Attention Generative Adversarial Networks”, 2018;
 
