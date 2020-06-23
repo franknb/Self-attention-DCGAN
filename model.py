@@ -7,12 +7,8 @@ import numpy as np
 
 class Self_Attn(nn.Module):
     """ Self attention Layer"""
-    def __init__(self, in_dim, activation):
+    def __init__(self, in_dim):
         super().__init__()
-        
-        # Initializing model param
-        self.chanel_in = in_dim
-        self.activation = activation
         
         # Construct the module
         self.query_conv = nn.Conv2d(in_channels = in_dim , out_channels = in_dim//2 , kernel_size= 1)
@@ -81,7 +77,7 @@ class Generator(nn.Module):
         self.l3 = nn.Sequential(*layer3)
 
         # Layer 4 (Attn) turn 128 dims -> 128 dims
-        self.attn = Self_Attn(conv_dim*2, 'relu')
+        self.attn = Self_Attn(conv_dim*2)
         
         # Layer 5 turn 128 dims -> 1 dims, size 14 -> 28
         last = []
@@ -134,7 +130,7 @@ class Discriminator(nn.Module):
         curr_dim = curr_dim * 2
         self.l3 = nn.Sequential(*layer3)
         
-        self.attn = Self_Attn(curr_dim, 'relu')
+        self.attn = Self_Attn(curr_dim)
         
         last = []
         last.append(nn.Conv2d(curr_dim, 1, 4, 2, 1))
