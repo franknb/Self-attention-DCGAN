@@ -68,7 +68,7 @@ class Generator(nn.Module):
         layer2.append(nn.ReLU())
         self.l2 = nn.Sequential(*layer2)
         
-        # Layer 3 turn 256 dims -> 128 dims, size 3 -> 14
+        # Layer 3 turn 256 dims -> 128 dims, size 7 -> 14
         layer3 = []
         layer3.append(SpectralNorm(nn.ConvTranspose2d(in_channels = conv_dim*4, out_channels = conv_dim*2, 
                                                       kernel_size = 4, stride = 2, padding = 1)))
