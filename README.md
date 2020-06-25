@@ -1,5 +1,13 @@
 # Self-attention-DCGAN
 
+### Core file for running the code:
+
+1. SAGAN_mnist.ipynb: A notebook interface containing codes for loading dataset, utility functions and training function.
+
+2. model.py: Contains self-attention, Generator and Discriminator modules.
+
+3. spectral.py: Containing spectral normalization module. Borrowed from https://github.com/heykeetae/Self-Attention-GAN. Can be removed given minor change in model.py.
+
 ### Model Structure:
 
 ![model_structure](demo/model_structure.png)
