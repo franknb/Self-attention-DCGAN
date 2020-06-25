@@ -1,6 +1,6 @@
 # Python and jupyter
 **/*.ipynb_checkpoints/
-!**/__pycache__/
+__pycache__/
 data/
 
 # Compiled source #
