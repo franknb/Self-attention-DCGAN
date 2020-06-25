@@ -1,6 +1,6 @@
 # Self-attention-DCGAN
 
-### Core file for running the code:
+### Core files for running the code:
 
 1. SAGAN_mnist.ipynb: A notebook interface containing codes for loading dataset, utility functions and training function.
 
