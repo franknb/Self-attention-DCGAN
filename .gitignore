@@ -2,10 +2,10 @@
 **/*.ipynb_checkpoints/
 __pycache__/
 data/
-sample_mnist/
-sample_mnist_attn/
-sample_dogs/
-sample_dogs_attn/
+samples_mnist/
+samples_mnist_attn/
+samples_dogs/
+samples_dogs_attn/
 
 # Compiled source #
 ###################
