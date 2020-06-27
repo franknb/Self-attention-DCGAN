@@ -14,7 +14,7 @@
 
 ### Deep Convolutional GAN VS Self Attention GAN
 
-![comparison on mnist](demo/comparison.gif)
+![comparison on mnist](demo/comparison_mnist.gif)
 
 ### Referance:
 
