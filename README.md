@@ -4,13 +4,11 @@
 
 ### Core files for running the code:
 
-1. SAGAN_mnist.ipynb: A notebook interface containing codes for loading mnist dataset, utility functions and training function.
+1. SAGAN_mnist.ipynb & SAGAN_celeba.ipynb: Notebooks interface containing codes for loading datasets, utility functions and training function.
 
-2. model_28.py: Contains self-attention, Generator and Discriminator modules for 28 by 28 version.
+2. model_28.py & model_64.py: Contains self-attention, Generator and Discriminator modules for 28 by 28 version and 64 by 64 version, respectively.
 
 3. spectral.py: Containing spectral normalization module. Borrowed from https://github.com/heykeetae/Self-Attention-GAN. Can be removed given minor change in model.py.
-
-4. download_dogs.sh: Bash script for downloading the dog dataset from http://vision.stanford.edu/aditya86/ImageNetDogs/.
 
 ### Self-attention module:
 
