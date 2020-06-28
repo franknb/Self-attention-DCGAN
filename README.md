@@ -12,7 +12,25 @@
 
 4. download_dogs.sh: Bash script for downloading the dog dataset from http://vision.stanford.edu/aditya86/ImageNetDogs/.
 
+### Self-attention module:
+
+An idea that has been out there for years, until Google spoke for it in 2007 as mentioned below in paper [3]. It worked as the following steps in the case of images:
+
+![SA_structure](demo/SA_structure.png)
+
+1. Using a kernel size 1 convo to generate Query, Key and Value layers, with the shape of Channels * N, N = Width * Height.
+
+2. Generate attention map by the matrix dot product of Query and Key, with the shape of N * N. The N * N attention map describe each pixel's attention score on every other pixels, hence the name "self-attention". Pixels here mean data points in input matrices.
+
+3. Get attention weights by the matrix dot product of Value and attention map, with the shape of C * N. The attention weights describe each pixel's total attention score throughout all pixels. We then reshape the attention weights into C * W * H.
+
+4. Add the attention weights back onto input layer it self with a weight of Gamma, a learning parameter initializing at 0. It means that the self-attention module does not do anything initially.
+
 ### Model Structure:
+
+1. For the 3 * 64 * 64 input case, I used a similar model setup from https://github.com/heykeetae/Self-Attention-GAN, with 2 attention layers in both G and D.
+
+2. For the 1 * 28 * 28 input case, I built such model:
 
 ![model_structure](demo/model_structure.png)
 
