@@ -6,6 +6,8 @@ samples_mnist/
 samples_mnist_attn/
 samples_dogs/
 samples_dogs_attn/
+samples_celeba/
+samples_celeba_attn/
 
 # Compiled source #
 ###################
