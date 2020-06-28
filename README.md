@@ -1,5 +1,7 @@
 # Self-attention-DCGAN
 
+***An application on the SAGAN from https://github.com/heykeetae/Self-Attention-GAN. I re-constructed part of code and added a 28*28 version running on mnist dataset.***
+
 ### Core files for running the code:
 
 1. SAGAN_mnist.ipynb: A notebook interface containing codes for loading dataset, utility functions and training function.
