@@ -8,6 +8,7 @@ samples_dogs/
 samples_dogs_attn/
 samples_celeba/
 samples_celeba_attn/
+download_dogs.sh
 
 # Compiled source #
 ###################
