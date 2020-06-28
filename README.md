@@ -16,6 +16,8 @@
 
 ![comparison on mnist](demo/comparison_mnist.gif)
 
+![comparison on celebA](demo/comparison_celebA.gif)
+
 ### Referance:
 
 [1] Han Zhang, Ian Goodfellow, Dimitris Metaxas, Augustus Odena: “Self-Attention Generative Adversarial Networks”, 2018;
