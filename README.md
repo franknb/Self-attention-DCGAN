@@ -12,7 +12,7 @@
 
 ### Self-attention module:
 
-An idea that has been out there for years, until Google spoke for it in 2007 as mentioned below in paper [3]. It worked as the following steps in the case of images:
+An idea that has been out there for years, until Google spoke for it in 2017 as mentioned below in paper [3]. It worked as the following steps in the case of images:
 
 ![SA_structure](demo/SA_structure.png)
 
